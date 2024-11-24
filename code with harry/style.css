@@ -1,0 +1,184 @@
+body {
+    background-color: rgb(0, 0, 33);
+    color: aliceblue;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(22, 22, 57);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: aqua;
+    font-size: 1.04rem;
+}
+
+body form {
+    background-color: rgb(0, 0, 33);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    width: 230px;
+}
+
+.submitreset {
+    text-decoration: none;
+    color: white;
+}
+
+#submit {
+    background-color: #007bff;
+    /* Initial button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+#submit:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+    transform: scale(1.05);
+    /* Slightly increase size on hover */
+}
+#reset {
+    background-color: #007bff;
+    /* Initial button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+#reset:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+    transform: scale(1.05);
+    /* Slightly increase size on hover */
+}
+
+label {
+    font-size: 16px;           /* Font size for readability */
+    color:white;               /* Dark color for contrast */
+    margin-bottom: 8px;        /* Space below the label */
+    display: inline-block;
+}
+
+/* Style for the input field */
+input[type="text"] {
+    width: 100%;               /* Full width within container */
+    max-width: 300px;          /* Limit width for larger screens */
+    padding: 10px;             /* Space inside the input */
+    font-size: 16px;           /* Font size */
+    color: #ebe5e5;               /* Text color */
+    background-color: #f9f9f9; /* Light background */
+    border: 2px solid #ccc;    /* Light gray border */
+    border-radius: 5px;        /* Rounded corners */
+    outline: none;             /* Remove default outline */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Focus effect for the input field */
+input[type="text"]:focus {
+    border-color: #007bff;     /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Light shadow */
+    background-color: #ffffff; /* Slightly lighter background */
+}
+/*--------------------------------------
+TEXT AREA
+*/
+textarea {
+    width: 100%;                /* Full width of the container */
+    max-width: 400px;           /* Max width for larger screens */
+    height: 100px;              /* Fixed height */
+    padding: 10px;              /* Space inside the textarea */
+    font-size: 16px;            /* Text size */
+    color: #333;                /* Text color */
+    background-color: #f9f9f9;  /* Light background */
+    border: 2px solid #ccc;     /* Initial border color */
+    border-radius: 8px;         /* Rounded corners */
+    resize: none;              
+    outline: none;              
+    transition: all 0.3s ease;  
+}
+
+textarea:focus {
+    border-color: #007bff;      /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light shadow on focus */
+    background-color: #ffffff;  /* Slightly lighter background on focus */
+}
+/*--------------------------------------
+FOR MALE AND FEMALE
+*/
+label {
+    font-size: 16px;               /* Font size for readability */
+    color: white;                   /* Text color */
+    margin-right: 10px;            /* Space between label and radio button */
+    cursor: pointer;               /* Pointer cursor for better UX */
+}
+
+/* Align radio buttons and labels */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;                     /* Space between each radio option */
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    width: 18px;                   /* Larger radio button size */
+    height: 18px;
+    accent-color: #007bff;         /* Set color of selected radio button */
+    cursor: pointer;               /* Pointer cursor for better UX */
+}

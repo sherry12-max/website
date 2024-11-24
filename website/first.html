@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloging Webiste</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: aliceblue;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(22, 22, 57);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: aqua;
+        font-size: 1.04rem;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 90px 0;
+    }
+
+    .firstsection>div {
+        width: 30%;
+    }
+
+    .leftsection {
+        font-size: 3rem;
+    }
+
+    .rightsection img {
+        width: 79%;
+    }
+
+    .purple {
+        color: blueviolet;
+    }
+
+    #element {
+        color: blueviolet;
+    }
+
+    .secondsection {
+        max-width: 70vw;
+        margin: auto;
+        font-size: x-large;
+    }
+
+    main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 3px;
+        margin: 20px 100px;
+        display: flex;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sherry's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/">SERVICES</a></li>
+                    <li><a href="/">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi I am <span class="purple">Shaheer</span>
+                <div>And i am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection"><img src="image.png" alt=""></div>
+        </section>
+        <section class="secondsection">
+            <hr>Past Experience</hr>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'C++ Expert ', 'Python Expert'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
